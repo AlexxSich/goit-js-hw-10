@@ -23,12 +23,14 @@ const promise = new Promise((resolve, rejected) => {
 
  promise.then((delay)=>{
             iziToast.success({
+                  position: 'topRight',
                   title: 'Success',
-                  message: `✅ Fulfilled promise in ${delay}ms`,
+                  message: `✅ Fulfilled promise in ${delay}ms`,                  
                 })   
 })
         .catch((delay)=>{
             iziToast.error({
+                  position: 'topRight',
                   title: 'Error',
                   message: `❌ Rejected promise in ${delay}ms`,
             })   
