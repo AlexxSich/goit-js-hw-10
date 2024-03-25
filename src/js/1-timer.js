@@ -31,14 +31,11 @@ const options = {
     } else {
       userSelectedDate = selectedDates[0];
       startBtn.disabled = false;
+      return userSelectedDate
     }
   },
 };
 flatpickr(pickDatetime, options)
-
-// console.log(userSelectedDate)
-// Вітаю Микола. Чи можете пояснити, щось підзабув, чому тут, рядок 38, я не можу побачити значення userSelectedDate через консоль, верніше чому воно показує undefined? На рядку 17 я його оголосив і вроді як на 31 рядку надав нове значення, але не зовсім розумію чому я його не бачу :). В середині функції я можу це перевірити але ззовні не виходить. Як можна зрозуміти, що значення записалося в змінну оголошену на 17 рядку? Дякую.
-
 
 function btnHandleClick(event) {
   const repeatTime = setInterval(()=>{      
